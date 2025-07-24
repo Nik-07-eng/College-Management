@@ -1,0 +1,28 @@
+body{
+background-image: url("https://pngtree.com/freebackground/real-shots-of-college-campus-classroom-desks-and-blackboards_1524074.html");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+#title{
+    text-align: center;
+    font-size: 3vh;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(76, 76, 205);
+}
+.button-container {
+      display: block;
+      gap: 10px; /* spacing between buttons */
+      margin-left: 270px;
+      font-size: 5vh;
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      font-size: 3vh;
+      cursor: pointer;
+    }
+    #img{
+    display: inline-block;
+    padding-top: 100px;
+    }
