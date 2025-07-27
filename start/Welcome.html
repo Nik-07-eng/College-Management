@@ -3,130 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Student Management System - Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-teacher-s-college-classroom-coaching-course-poster-background-picture-image_1034424.jpg");
-            background-size: cover;
-            background-repeat: no-repeat; 
-            background-attachment: fixed;
+        * {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f8fafc;
             min-height: 100vh;
-        }
-        .container {
-            max-width: 90%;
-            width: 600px;
-            margin: 60px auto;
-            background: rgba(255,255,255,0.92);
-            border-radius: 20px;
-            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
-            padding: 40px 5% 32px 5%;
-            text-align: center;
-            backdrop-filter: blur(2px);
-            border: 1.5px solid #e0e0e0;
-        }
-        .logo-wrapper {
             display: flex;
-            justify-content: center;
             align-items: center;
-            margin-bottom: 24px;
-        }
-        .logo {
-            width: 18%;
-            min-width: 70px;
-            max-width: 110px;
-            height: auto;
-            aspect-ratio: 1/1;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(60,60,60,0.18);
-            background: #fff;
-            object-fit: contain;
-            border: 2.5px solid #e3e3e3;
-            padding: 8px;
-            transition: box-shadow 0.2s;
-        }
-        .logo:hover {
-            box-shadow: 0 8px 32px rgba(60,60,60,0.25);
-        }
-        .college-title {
-            font-size: 40px;
-            margin: 0;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.13);
-            color: #1a237e;
-        }
-        .subtitle {
-            font-size: 21px;
-            margin: 18px 0 0 0;
-            color: #444;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-        .welcome-message {
-            margin: 28px 0 0 0;
-            font-size: 18px;
+            justify-content: center;
             color: #333;
-            background: #f5f7fa;
-            border-radius: 10px;
-            padding: 18px 16px;
-            box-shadow: 0 2px 8px rgba(31,38,135,0.07);
         }
-        .visit-btn {
+
+        .welcome-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: white;
+            padding: 10px;
+            border: 3px solid #e2e8f0;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #64748b;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .login-button {
             display: inline-block;
-            margin-top: 32px;
-            padding: 14px 10%;
-            font-size: 18px;
-            font-weight: 600;
-            color: #fff;
-            background: linear-gradient(90deg, #3949ab 0%, #1a237e 100%);
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(31,38,135,0.13);
-            cursor: pointer;
+            background: #3b82f6;
+            color: white;
             text-decoration: none;
-            transition: background 0.2s, transform 0.15s;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s;
         }
-        .visit-btn:hover {
-            background: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
-            transform: translateY(-2px) scale(1.04);
+
+        .login-button:hover {
+            background: #2563eb;
         }
-        @media (max-width: 700px) {
-            .container {
-                max-width: 98vw;
-                padding: 24px 2vw;
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-container {
+                margin: 20px;
+                padding: 30px 20px;
             }
-            .college-title {
-                font-size: 26px;
+
+            h1 {
+                font-size: 24px;
             }
-            .logo {
-                width: 30%;
-                min-width: 50px;
-                max-width: 70px;
-                padding: 4px;
+
+            h2 {
+                font-size: 18px;
             }
-            .visit-btn {
-                width: 90%;
-                font-size: 16px;
-                padding: 12px 0;
+
+            .description {
+                font-size: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-wrapper">
-            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVWNZWi7nxEhsGh66uIQO-Vd289U4VDhmIg&s" alt="Government Polytechnic Logo">
+    <div class="welcome-container">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVWNZWi7nxEhsGh66uIQO-Vd289U4VDhmIg&s" alt="College Logo">
         </div>
-        <h1 class="college-title">Government Polytechnic, Ahilyanagar</h1>
-        <div class="subtitle">Welcome to the official website</div>
-        <div class="welcome-message">
-            We are committed to providing quality technical education and fostering innovation.<br>
-            Explore our courses, faculty, and campus life. Click the button below to enter the portal.
+        
+        <h1>GOVERNMENT POLYTECHNIC, AHILYANAGAR</h1>
+        <h2>Student Management System</h2>
+        
+        <p class="description">
+            Welcome to our student management portal. Access your academic records, 
+            course materials, and stay connected with your educational journey.
+        </p>
+        
+        <a href="CSE-login.html" class="login-button">Enter Student Portal</a>
+        
+        <div class="footer">
+            <p>&copy; 2024 Government Polytechnic, Ahilyanagar. All rights reserved.</p>
         </div>
-        <a class="visit-btn" href="Entry.html">Visit Portal</a>
     </div>
 </body>
 </html>
