@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - MET Engineering College</title>
+    <link rel="stylesheet" href="CSE-login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVWNZWi7nxEhsGh66uIQO-Vd289U4VDhmIg&s" alt="College Logo">
+            </div>
+            <h1>GOVERNMENT POLYTECHNIC, AHILYANAGAR</h1>
+            <h2>Computer Department</h2>
+            <p>Welcome to the student portal</p>
+        </div>
+        
+        <div class="right-side">
+            <div class="login-box">
+                <h2>Student Login</h2>
+                <form action="CSE-login.php" method="POST">
+                    <div class="input-group">
+                        <label>Student ID</label>
+                        <input type="text" name="student_id" placeholder="Enter your student ID" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="options">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit">Login</button>
+                    
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <a href="faculty-login.html" class="faculty-link">Login as Faculty</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
